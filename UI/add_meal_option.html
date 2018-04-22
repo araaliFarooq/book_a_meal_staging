@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Food Court - Add A Meal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/css/jquery-ui.css" type="text/css" media="all">
+    <link href="static/css/wickedpicker.css" rel="stylesheet" type='text/css' media="all" />
+    <link href="static/css/style.css" rel='stylesheet' type='text/css' />
+    <!--webfonts-->
+    <link href="//fonts.googleapis.coma/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <!--//webfonts-->
+
+</head>
+
+<body>
+    <h1> Add Meal Options</h1>
+    <div class="containerw3layouts-agileits">
+        <div class="w3layoutscontactagileits">
+
+            <div id="wrapper">
+                <form action="#" method="post">
+                    <div id="login" class="animate w3layouts agileits form">
+                        <div class="book-pag agileits w3layouts">
+
+                            <div class="book-pag-frm1 agileits w3layouts">
+                                <label>Date :</label><input class="date agileits w3layouts" id="datepicker2" type="text" value="Date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="ferry ferry-from">
+                            <label>Food :</label>
+                            <select name="Food">
+											<option value="Dover">Rice</option>
+											<option value="Dover">Fries</option>
+											<option value="Dover">Matooke</option>
+											<option value="Dover">Posho</option>
+											<option value="Dover">Cassava</option>
+											<option value="Dover">Potatoes</option>
+											
+										</select>
+                        </div>
+                        <div class="ferry ferry-from">
+                            <label>Sauce :</label>
+                            <select name="sauce">
+											<option value="Dover">Beef</option>
+											<option value="Dover">Liver</option>
+											<option value="Dover">Beens</option>
+											<option value="Dover">Peas</option>
+											<option value="Dover">Fish</option>
+											<option value="Dover">G-Nuts</option>
+											
+										</select>
+                        </div>
+
+                        <div class="book-pag agileits w3layouts">
+
+
+                            <div class="clear"></div>
+                        </div>
+                        <div class="tickets">
+                            <div class="persons">
+                                <label>Cost :</label>
+                                <input type="number" name="cost" placeholder="200" required>
+                            </div>
+
+
+                            <div class="clear"></div>
+                        </div>
+
+                        <div class="wthreesubmitaits">
+                            <input type="submit" name="submit" value="Add">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="w3lsfooteragileits">
+        <p> © 2018 Food Court . All rights reserved | Design by <a href="http://TIA" target="_blank">TIAlayouts</a></p>
+    </div>
+    <!-- Necessary-JavaScript-Files-&-Links -->
+    <!-- Date-Picker-JavaScript -->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/wickedpicker.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#datepicker,#datepicker1,#datepicker2").datepicker();
+        });
+    </script>
+
+    <script type="text/javascript">
+        $('.timepicker').wickedpicker({
+            twentyFour: false
+        });
+    </script>
+
+    <!-- //Date-Picker-JavaScript -->
+    <!-- //Necessary-JavaScript-Files-&-Links -->
+
+
+</body>
+
+</html>

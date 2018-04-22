@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Food Court - Todays Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="static/css/jquery-ui.css" type="text/css" media="all">
+    <link href="static/css/wickedpicker.css" rel="stylesheet" type='text/css' media="all" />
+    <link href="static/css/style.css" rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" type="text/css" href="static/css/tables.css" />
+    <!--webfonts-->
+    <link href="//fonts.googleapis.coma/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <!--//webfonts-->
+
+</head>
+
+<body>
+    <h1> Today's Menu</h1>
+    <table width="95%" align="center" class="w3-table w3-bordered w3-striped w3-border test w3-hoverable" style=" float:inherit; padding-left:inherit; width:80%; margin-left:10%; margin-right:10%;">
+        <tbody>
+            <tr class="w3-green">
+
+                <th>Food</th>
+                <th>Sauce</th>
+                <th>Cost(Ushs)</th>
+                <th>options</th>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+
+                <td>Fries</td>
+                <td>Beef</td>
+                <td>500</td>
+                <td><input type="submit" name="submit" value="Edit"><input type="submit" name="submit" value="Delete"></td>
+            </tr>
+            <tr>
+
+                <td>Rice</td>
+                <td>Beens</td>
+                <td>150</td>
+                <td><input type="submit" name="submit" value="Edit"><input type="submit" name="submit" value="Delete"></td>
+            </tr>
+            <tr>
+
+                <td>Rice</td>
+                <td>Beef</td>
+                <td>300</td>
+                <td><input type="submit" name="submit" value="Edit"><input type="submit" name="submit" value="Delete"></td>
+            </tr>
+            <tr>
+
+
+                <td>Posho</td>
+                <td>Beans</td>
+                <td>50</td>
+                <td><input type="submit" name="submit" value="Edit"><input type="submit" name="submit" value="Delete"></td>
+            </tr>
+
+        </tbody>
+    </table>
+    <div>
+    </div>
+    <div>
+    </div>
+    <div class="wthreesubmitaits" style="padding-top:50px;">
+        <input type="submit" name="submit" value="Submit Order">
+    </div>
+    <div class="w3lsfooteragileits">
+        <p> © 2018 Food Court . All rights reserved | Design by <a href="http://TIA" target="_blank">TIAlayouts</a></p>
+    </div>
+    <!-- Necessary-JavaScript-Files-&-Links -->
+    <!-- Date-Picker-JavaScript -->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/wickedpicker.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#datepicker,#datepicker1,#datepicker2").datepicker();
+        });
+    </script>
+
+    <script type="text/javascript">
+        $('.timepicker').wickedpicker({
+            twentyFour: false
+        });
+    </script>
+
+    <!-- //Date-Picker-JavaScript -->
+    <!-- //Necessary-JavaScript-Files-&-Links -->
+
+
+</body>
+
+</html>
