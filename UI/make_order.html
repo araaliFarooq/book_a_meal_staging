@@ -2,74 +2,87 @@
 <html>
 
 <head>
-    <title>Food Court - Make Your Order</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food Court - Add A Meal</title>
 
+
+    <link rel="stylesheet" href="static/css/main.css" type="text/css" media="all">
+    <link rel="stylesheet" href="static/css/wickedpicker.css" type="text/css" media="all">
     <link rel="stylesheet" href="static/css/jquery-ui.css" type="text/css" media="all">
-    <link href="static/css/wickedpicker.css" rel="stylesheet" type='text/css' media="all" />
-    <link href="static/css/style.css" rel='stylesheet' type='text/css' />
     <link rel="stylesheet" type="text/css" href="static/css/tables.css" />
-    <!--webfonts-->
-    <link href="//fonts.googleapis.coma/css?family=Open+Sans:400,600,700" rel="stylesheet">
-    <!--//webfonts-->
 
 </head>
 
 <body>
-    <h1> Place Your Order</h1>
-    <table width="95%" align="center" class="w3-table w3-bordered w3-striped w3-border test w3-hoverable" style=" float:inherit; padding-left:inherit; width:80%; margin-left:10%; margin-right:10%;">
-        <tbody>
-            <tr class="w3-green">
-                <th>Choose</th>
-                <th>Food</th>
-                <th>Sauce</th>
-                <th>Cost(Ushs)</th>
-            </tr>
-        </tbody>
-        <tbody>
-            <tr>
-                <td><input type="checkbox" name="meal" value="id"></td>
-                <td>Fries</td>
-                <td>Beef</td>
-                <td>500</td>
-            </tr>
-            <tr>
-                <td><input type="checkbox" name="meal" value="id"></td>
-                <td>Rice</td>
-                <td>Beens</td>
-                <td>150</td>
-            </tr>
-            <tr>
-                <td><input type="checkbox" name="meal" value="id"></td>
-                <td>Rice</td>
-                <td>Beef</td>
-                <td>300</td>
-            </tr>
-            <tr>
-                <td><input type="checkbox" name="meal" value="id"></td>
-
-                <td>Posho</td>
-                <td>Beans</td>
-                <td>50</td>
-            </tr>
-
-        </tbody>
-    </table>
-    <div>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="available_orders.html">All Orders</a></li>
+        <li><a href="available_orders.html">All Orders</a></li>
+        <li><a href="make_order.html">Make Order</a></li>
+        <li><a href="admins_menu.html">Manage Menu</a></li>
+        <li><a href="days_summary.html">Daily Report</a></li>
+        <li><a href="#">logout</a></li>
+    </ul>
+    <div text-align="center">
+        <h1> Place Your Order</h1>
     </div>
-    <div>
+    <div class="other-tables">
+
+
+        <table align="center" class="w3-table  w3-hoverable" style=" width: 90%;">
+            <tbody>
+                <tr class="w3-green">
+                    <th>Choose</th>
+                    <th>Food</th>
+                    <th>Sauce</th>
+                    <th>Cost(Ushs)</th>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" name="meal" value="id"></td>
+                    <td>Fries</td>
+                    <td>Beef</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="meal" value="id"></td>
+                    <td>Rice</td>
+                    <td>Beens</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="meal" value="id"></td>
+                    <td>Rice</td>
+                    <td>Beef</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="meal" value="id"></td>
+
+                    <td>Posho</td>
+                    <td>Beans</td>
+                    <td>50</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
     </div>
-    <div class="wthreesubmitaits" style="padding-top:50px;">
+    <div class="submit-button">
+
         <input type="submit" name="submit" value="Submit Order">
+
     </div>
-    <div class="w3lsfooteragileits">
-        <p> © 2018 Food Court . All rights reserved | Design by <a href="http://TIA" target="_blank">TIAlayouts</a></p>
+
+
     </div>
-    <!-- Necessary-JavaScript-Files-&-Links -->
-    <!-- Date-Picker-JavaScript -->
-    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/jquery-ui.js"></script>
-    <script src="js/wickedpicker.js"></script>
+    <div style="float: center; padding-left: 0%;text-align:center;">
+        <p> © 2018 Food Court . All rights reserved | Design by <a href="http://TIA" target="_blank">TIA</a></p>
+    </div>
+    <script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
+    <script src="static/js/jquery-ui.js"></script>
+    <script src="static/js/wickedpicker.js"></script>
 
     <script type="text/javascript">
         $(function() {
@@ -82,11 +95,6 @@
             twentyFour: false
         });
     </script>
-
-    <!-- //Date-Picker-JavaScript -->
-    <!-- //Necessary-JavaScript-Files-&-Links -->
-
-
 </body>
 
 </html>
