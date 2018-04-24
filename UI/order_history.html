@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Food Court - Add A Meal</title>
+
+
+    <link rel="stylesheet" href="static/css/main.css" type="text/css" media="all">
+    <link rel="stylesheet" href="static/css/wickedpicker.css" type="text/css" media="all">
+    <link rel="stylesheet" href="static/css/jquery-ui.css" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/tables.css" />
+
+</head>
+
+<body>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="available_orders.html">All Orders</a></li>
+        <li><a href="available_orders.html">All Orders</a></li>
+        <li><a href="make_order.html">Make Order</a></li>
+        <li><a href="admins_menu.html">Manage Menu</a></li>
+        <li><a href="days_summary.html">Daily Report</a></li>
+        <li><a href="#">logout</a></li>
+    </ul>
+    <div text-align="center">
+        <h1> Your Order History</h1>
+    </div>
+    <div class="other-tables">
+
+
+        <table align="center" class="w3-table  w3-hoverable" style=" width: 90%;">
+            <tbody>
+                <tr class="w3-green">
+                    <th>Date</th>
+                    <th>Meal</th>
+
+                    <th>Cost(Ushs)</th>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>04/22/2018</td>
+                    <td>Fries + Beef</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+
+                    <td>04/23/2018</td>
+                    <td>Rice + Beens</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+
+                    <td>04/24/2018</td>
+                    <td>Rice + Beef</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+
+                    <td>04/25/2018</td>
+                    <td>Posho + Beans</td>
+                    <td>50</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
+    </div>
+    <div class="submit-button">
+
+        <input type="button" name="submit" value="Finish">
+
+    </div>
+
+
+    </div>
+    <div style="float: center; padding-left: 0%;text-align:center;">
+        <p> © 2018 Food Court . All rights reserved | Design by <a href="http://TIA" target="_blank">TIA</a></p>
+    </div>
+    <script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
+    <script src="static/js/jquery-ui.js"></script>
+    <script src="static/js/wickedpicker.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#datepicker,#datepicker1,#datepicker2").datepicker();
+        });
+    </script>
+
+    <script type="text/javascript">
+        $('.timepicker').wickedpicker({
+            twentyFour: false
+        });
+    </script>
+</body>
+
+</html>
