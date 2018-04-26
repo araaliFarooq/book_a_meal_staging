@@ -10,50 +10,50 @@
 </head>
 
 <body>
-    
+
     <div class="heading">
         <h1> New to FoodCourt</h1>
         <h3>Login here and make your order.</h3>
     </div>
     <div class="main">
-        <form action="/action_page.php">
+        <form action="make_order.html">
             <input type="text" id="admin" name="admin" placeholder="Username...">
             <input type="password" id="pword" name="password" placeholder="Password...">
-            <a href="add_meal_option.html"><input type="submit" value="Login"></a>
+            <a href=""><input type="submit" value="Login"></a>
             <p>Have no account, <a href="#" id="myBtn">Register here</a></p>
         </form>
     </div>
     <div id="myModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <div class="maindialog">
-                <form><!--action_page.php-->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="maindialog">
+                <form action="">
+                    <!--action_page.php-->
                     <input type="text" id="admin" name="admin" placeholder="Username...">
                     <input type="password" id="pword" name="password" placeholder="Contact...">
                     <input type="password" id="pword" name="password" placeholder="Password...">
                     <input type="password" id="pword" name="password" placeholder="Confirm Password...">
-                    <input type="submit" value="Sign up">
+                    <a href=""><input type="submit" value="Sign up"></a>
                 </form>
-                </div>
             </div>
         </div>
-    <div style="float: center; padding-left: 0%; font:; text-align:center;">
+    </div>
+    <div style="float: center; padding-left: 0%;  text-align:center;">
         <p> © 2018 Food Court . All rights reserved | Design by <a href="http://TIA" target="_blank">TIA</a></p>
     </div>
     <script>
-
         var modal = document.getElementById('myModal');
 
         var btn = document.getElementById("myBtn");
 
         var span = document.getElementsByClassName("close")[0];
 
-        
+
         btn.onclick = function() {
             modal.style.display = "block";
         }
 
-        
+
         span.onclick = function() {
             modal.style.display = "none";
         }
@@ -66,4 +66,5 @@
         }
     </script>
 </body>
+
 </html>
